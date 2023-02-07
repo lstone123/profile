@@ -1,170 +1,93 @@
-* {
-  box-sizing: border-box;
+body{
+  background-color: #f0f0f0;
+  /* color: #2D3348; */
 }
 
-body {
-  background-color: #F5F5F5;
-  font-family: 'Heebo', sans-serif;
-  margin: 0;
+/* CARDS */
+.container{
+  margin: auto;
+  max-width: 950px;
 }
 
-/* CARD FORMATTING TOP TWO CARDS ALIGNED */
-.container {
- max-width: 900px;
- margin: 10px auto;
+.img-card-grey{
+  background-color: rgb(216, 216, 216);
+  border-radius: 50%;
+  width:fit-content;
+  height:fit-content;
+  max-height: 196px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.card-headers-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 10px auto;
-  justify-content:space-between;
-  gap: 20px;
-}
-
-.left-card-white {
-  width: 45%;
-  flex: 400px;
-  height: 100%;
-  min-height: 380px;
-  min-width: 340px;
-  background-color: #FEFFFE;
-  border-radius: 3px;
-  padding: 18px;
-  box-shadow: 0px 2px 3px rgba(188, 184, 177, .3);
-  position:relative;
-}
-
-.right-card-white{
-  width: 45%;
-  height: 100%;
-  flex: 400px;
-  min-width: 340px;
-  min-height: 380px;
-  background-color: #FEFFFE;
-  border-radius: 3px;
-  padding: 18px;
-  box-shadow: 0px 2px 3px rgb(188, 184, 177, .3);
+.title-card{
   text-align: center;
 }
 
-/* REST OF CARDS FORMATTING BELOW */
-
-.card-white {
-  background-color: #FEFFFE;
-  min-width: 340px;
-  width: 100%;
-  margin: 10px auto;
-  border-radius: 3px;
-  padding: 18px;
-  box-shadow: 0px 2px 3px rgba(188, 184, 177, .3);
+.body-card{
+  text-align: justify;
 }
 
-.card-music {
-  position: relative;
-}
-
-/* IMAGES FORMATTING BELOW */
-
-.img-curved {
-  border-radius: 1px;
-  flex: 400px;
-}
-
-/* SOCIALS DIV FORMATTING BELOW */
-
-.socials-card-white {
-  background-color: #FEFFFE;
-  min-width: 340px;
-  width: 100%;
-  margin: 10px auto;
-  border-radius: 3px;
-  padding: 18px;
-  box-shadow: 0px 2px 3px rgba(188, 184, 177, .3);
+.socials-card{
+  margin-top: 48px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.list-inline {
-  list-style: none;
-  margin: 0px;
-  padding-left: 0px;
+/* TEXT & FONTS */
+
+h1{
+  font-size: 52px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Noto Serif Display', serif;
+  /* font-weight: bold; */
+  /* color: #222346; */
+  /* color: #fbe672; */
+  color: #F4D47B;
+
 }
 
-.list-inline li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
+h2{
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 48px;
+  font-family: 'Noto Sans', sans-serif;
+  /* color: #222346; */
+  color: #6D6F89;
+  font-weight: 700;
 }
 
-#socials-header-center {
-  text-align: center
+p{
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  /* color: #222346; */
+  color: #3B3C59;
 }
 
-.socials-card-white a {
-  color: black;
-  font-size: 24px;
-  text-decoration: none;
+a{
+  font-size:18px;
+  /* color: #2D3348; */
+  /* color: #222346; */
+  color: #3B3C59;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-/* BUTTON FORMATTING BELOW */
-
-.button-left-aligned {
-  width: fit-content;
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0px 2px 3px rgba(188, 184, 177, .3);
-  color: #FEFFFE;
-  text-decoration: none;
-  font-weight: bold;
-  position: absolute;
-  left: 18px;
-  bottom: 18px;
+a:hover{
+  /* color: #565C73; */
+  color: #6D6F89;
 }
 
+/* IMAGES */
 
-.button-left-aligned:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black
-}
-
-/* TEXT FORMATTING BELOW */
-
-h1 {
-  text-align: left;
-  padding-bottom: 10px;
-  margin: 0px
-}
-
-h2 {
-  text-align: justify;
-  font-size: 19px;
-  margin: 0px;
-  padding-bottom: 10px;
-}
-
-h3 {
-  text-align: justify;
-  font-size: 19px;
-  margin: 0px;
-  padding-bottom: 5px;
-}
-
-p {
-  text-align: justify;
-  margin: 0px
-}
-
-.card-music p {
-  padding-bottom: 10px
-}
-
-.left-card-white p {
-  padding-bottom: 10px
+img{
+  height: 196px;
+  width: 196px;
+  border-radius: 50%;
+  object-fit:cover;
+  object-position: 50% -10%;
+  display:block;
 }
 
 @media (max-width: 960px) {
